@@ -106,5 +106,25 @@ namespace Colecoes
 
 
         }
+
+        private void btnSortedDict_Click(object sender, EventArgs e)
+        {
+            SortedDictionary<int, string> sortedDict = new SortedDictionary<int, string>()
+            {
+                {10, "mauro" },
+                {2, "joao" },
+                {301, "pedro" },
+                {1, "vitor" }
+            };
+
+            sortedDict.Add(97, "tiago");
+
+            foreach (KeyValuePair<int, string> v in sortedDict)
+            {
+                lista.Items.Add(v);
+            }
+                
+
+        }
     }
 }
