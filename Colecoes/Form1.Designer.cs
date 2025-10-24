@@ -34,23 +34,27 @@
             this.btnDict = new System.Windows.Forms.Button();
             this.btnSortedList = new System.Windows.Forms.Button();
             this.btnSortedDict = new System.Windows.Forms.Button();
+            this.btnSortedSet = new System.Windows.Forms.Button();
+            this.btnQueue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
             // 
             this.lista.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lista.FormattingEnabled = true;
-            this.lista.ItemHeight = 31;
-            this.lista.Location = new System.Drawing.Point(12, 12);
+            this.lista.ItemHeight = 26;
+            this.lista.Location = new System.Drawing.Point(9, 10);
+            this.lista.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(548, 407);
+            this.lista.Size = new System.Drawing.Size(412, 316);
             this.lista.TabIndex = 0;
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(588, 12);
+            this.btnList.Location = new System.Drawing.Point(441, 10);
+            this.btnList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(153, 74);
+            this.btnList.Size = new System.Drawing.Size(127, 35);
             this.btnList.TabIndex = 1;
             this.btnList.Text = "List";
             this.btnList.UseVisualStyleBackColor = true;
@@ -58,9 +62,10 @@
             // 
             // btnHashSet
             // 
-            this.btnHashSet.Location = new System.Drawing.Point(588, 92);
+            this.btnHashSet.Location = new System.Drawing.Point(441, 50);
+            this.btnHashSet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHashSet.Name = "btnHashSet";
-            this.btnHashSet.Size = new System.Drawing.Size(153, 74);
+            this.btnHashSet.Size = new System.Drawing.Size(127, 35);
             this.btnHashSet.TabIndex = 2;
             this.btnHashSet.Text = "HashSet";
             this.btnHashSet.UseVisualStyleBackColor = true;
@@ -68,9 +73,10 @@
             // 
             // btnDict
             // 
-            this.btnDict.Location = new System.Drawing.Point(588, 172);
+            this.btnDict.Location = new System.Drawing.Point(441, 89);
+            this.btnDict.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDict.Name = "btnDict";
-            this.btnDict.Size = new System.Drawing.Size(153, 74);
+            this.btnDict.Size = new System.Drawing.Size(127, 35);
             this.btnDict.TabIndex = 3;
             this.btnDict.Text = "Dictionary";
             this.btnDict.UseVisualStyleBackColor = true;
@@ -78,9 +84,10 @@
             // 
             // btnSortedList
             // 
-            this.btnSortedList.Location = new System.Drawing.Point(588, 252);
+            this.btnSortedList.Location = new System.Drawing.Point(441, 129);
+            this.btnSortedList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSortedList.Name = "btnSortedList";
-            this.btnSortedList.Size = new System.Drawing.Size(153, 74);
+            this.btnSortedList.Size = new System.Drawing.Size(127, 35);
             this.btnSortedList.TabIndex = 4;
             this.btnSortedList.Text = "SortedList";
             this.btnSortedList.UseVisualStyleBackColor = true;
@@ -88,25 +95,51 @@
             // 
             // btnSortedDict
             // 
-            this.btnSortedDict.Location = new System.Drawing.Point(588, 332);
+            this.btnSortedDict.Location = new System.Drawing.Point(441, 169);
+            this.btnSortedDict.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSortedDict.Name = "btnSortedDict";
-            this.btnSortedDict.Size = new System.Drawing.Size(153, 74);
+            this.btnSortedDict.Size = new System.Drawing.Size(127, 35);
             this.btnSortedDict.TabIndex = 5;
             this.btnSortedDict.Text = "SortedDictionary";
             this.btnSortedDict.UseVisualStyleBackColor = true;
             this.btnSortedDict.Click += new System.EventHandler(this.btnSortedDict_Click);
             // 
+            // btnSortedSet
+            // 
+            this.btnSortedSet.Location = new System.Drawing.Point(441, 209);
+            this.btnSortedSet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSortedSet.Name = "btnSortedSet";
+            this.btnSortedSet.Size = new System.Drawing.Size(127, 35);
+            this.btnSortedSet.TabIndex = 6;
+            this.btnSortedSet.Text = "SortedSet";
+            this.btnSortedSet.UseVisualStyleBackColor = true;
+            this.btnSortedSet.Click += new System.EventHandler(this.btnSortedSet_Click);
+            // 
+            // btnQueue
+            // 
+            this.btnQueue.Location = new System.Drawing.Point(441, 248);
+            this.btnQueue.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(127, 35);
+            this.btnQueue.TabIndex = 7;
+            this.btnQueue.Text = "Queue";
+            this.btnQueue.UseVisualStyleBackColor = true;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnQueue);
+            this.Controls.Add(this.btnSortedSet);
             this.Controls.Add(this.btnSortedDict);
             this.Controls.Add(this.btnSortedList);
             this.Controls.Add(this.btnDict);
             this.Controls.Add(this.btnHashSet);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.lista);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listas Genericas";
@@ -122,6 +155,8 @@
         private System.Windows.Forms.Button btnDict;
         private System.Windows.Forms.Button btnSortedList;
         private System.Windows.Forms.Button btnSortedDict;
+        private System.Windows.Forms.Button btnSortedSet;
+        private System.Windows.Forms.Button btnQueue;
     }
 }
 

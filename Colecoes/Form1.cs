@@ -126,5 +126,53 @@ namespace Colecoes
                 
 
         }
+
+        private void btnSortedSet_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            SortedSet<string> strings = new SortedSet<string>()
+            {
+                "mauro", "danny","arthur","joao"
+            };
+
+            foreach (string v in strings)
+            {
+                lista.Items.Add(v);
+                
+            }
+        }
+
+        private void btnQueue_Click(object sender, EventArgs e)
+        {
+            Queue<string> queue = new Queue<string>();
+
+            queue.Enqueue("a");
+            queue.Enqueue("b");
+            queue.Enqueue("c");
+
+            MessageBox.Show($"{queue.Count.ToString()} obejetos na fila.");
+
+
+            foreach (string v in queue)
+            {
+                lista.Items.Add(v);
+            }
+
+            while(queue.Count > 0)
+            {
+                MessageBox.Show($"Primeiro da fila {queue.Dequeue()}");
+                MessageBox.Show($"{queue.Count.ToString()} obejetos na fila.");
+                     lista.Items.Clear();
+                foreach (string v in queue)
+                {
+                    lista.Items.Add(v);
+                }
+
+
+            }
+      
+
+        }
     }
 }
