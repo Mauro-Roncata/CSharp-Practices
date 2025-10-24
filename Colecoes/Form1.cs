@@ -174,5 +174,25 @@ namespace Colecoes
       
 
         }
+
+        private void btnStack_Click(object sender, EventArgs e)
+        {
+            Stack<string> stack = new Stack<string>();
+
+            stack.Push("a");
+            stack.Push("b");
+            stack.Push("c");
+
+            MessageBox.Show($"{stack.Count.ToString()} elementos na stack");
+
+            foreach (string v in stack)
+            {
+                lista.Items.Add(v);
+            }
+
+            MessageBox.Show($"Elemento no topo: {stack.Peek()}");
+        }
+
+  
     }
 }
