@@ -30,6 +30,7 @@
         {
             this.btncMsgBox = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncMsgBox
@@ -51,11 +52,22 @@
             this.lblResult.TabIndex = 1;
             this.lblResult.Text = "label1";
             // 
+            // btnRandom
+            // 
+            this.btnRandom.Location = new System.Drawing.Point(215, 357);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(197, 81);
+            this.btnRandom.TabIndex = 2;
+            this.btnRandom.Text = "Random";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btncMsgBox);
             this.Name = "Form1";
@@ -68,6 +80,7 @@
 
         private System.Windows.Forms.Button btncMsgBox;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnRandom;
     }
 }
 
