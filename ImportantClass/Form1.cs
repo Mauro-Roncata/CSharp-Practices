@@ -35,5 +35,15 @@ namespace ImportantClass
             
 
         }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+
+            int valor = r.Next(0, 11);
+            double valor2 = r.NextDouble() * 100;
+
+            lblResult.Text = valor2.ToString();  
+        }
     }
 }
