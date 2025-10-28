@@ -54,5 +54,28 @@ namespace ImportantClass
 
             lblResult.Text = ts.ToString(); ;
         }
+
+        private void btnDateTime_Click(object sender, EventArgs e)
+        {
+            // DateTime agora = DateTime.Now;
+            // DateTime agora = DateTime.Today;
+            // DateTime.DaysInMonth(2020,07);
+            // bool agora = DateTime.IsLeapYear(2024);
+            // string agora = DateTime.Now.ToLongDateString();
+            // string agora = DateTime.Now.ToShortDateString();
+            // string agora = DateTime.Now.ToLongTimeString();
+            // string agora = DateTime.Now.ToShortTimeString();
+            // DateTime agora = DateTime.Now.ToUniversalTime();
+            // DateTime agora = DateTime.Now;
+            // lblResult.Text = agora.ToString("dd-MM-yyyy HH:mm:ss"); 
+
+
+            DateTime data = new DateTime(1985, 01, 10, 14, 20, 0);
+
+           /* TimeSpan tempo = new TimeSpan(5,30,30);
+            lblResult.Text = data.Add(tempo).ToString();*/
+
+            lblResult.Text = data.DayOfWeek.ToString(); 
+        }
     }
 }
