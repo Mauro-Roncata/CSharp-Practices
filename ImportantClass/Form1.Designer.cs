@@ -31,6 +31,7 @@
             this.btncMsgBox = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
             this.btnRandom = new System.Windows.Forms.Button();
+            this.btnTimeSpan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncMsgBox
@@ -62,11 +63,22 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
+            // btnTimeSpan
+            // 
+            this.btnTimeSpan.Location = new System.Drawing.Point(418, 357);
+            this.btnTimeSpan.Name = "btnTimeSpan";
+            this.btnTimeSpan.Size = new System.Drawing.Size(197, 81);
+            this.btnTimeSpan.TabIndex = 3;
+            this.btnTimeSpan.Text = "TimeSpan";
+            this.btnTimeSpan.UseVisualStyleBackColor = true;
+            this.btnTimeSpan.Click += new System.EventHandler(this.btnTimeSpan_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTimeSpan);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btncMsgBox);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Button btncMsgBox;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnRandom;
+        private System.Windows.Forms.Button btnTimeSpan;
     }
 }
 
