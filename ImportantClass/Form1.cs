@@ -77,5 +77,25 @@ namespace ImportantClass
 
             lblResult.Text = data.DayOfWeek.ToString(); 
         }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            Color aqua = Color.Aqua;
+            Color bisque = Color.Khaki;
+
+            // Color cor1 = Color.FromArgb(100, aqua);
+            Color cor1 = Color.FromArgb(255, 255, 255, 255);
+            Color cor2 = Color.FromKnownColor(KnownColor.DarkViolet);
+            Color cor3 = Color.FromName("DarkRed");
+
+            lblResult.BackColor = cor3;
+            lblResult.ForeColor = bisque;
+
+            Color cor4 = lblResult.BackColor;
+
+            btnColor.ForeColor = cor4;
+            
+
+        }
     }
 }
