@@ -32,13 +32,15 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.btnRandom = new System.Windows.Forms.Button();
             this.btnTimeSpan = new System.Windows.Forms.Button();
+            this.btnDateTime = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncMsgBox
             // 
-            this.btncMsgBox.Location = new System.Drawing.Point(12, 357);
+            this.btncMsgBox.Location = new System.Drawing.Point(16, 439);
+            this.btncMsgBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btncMsgBox.Name = "btncMsgBox";
-            this.btncMsgBox.Size = new System.Drawing.Size(197, 81);
+            this.btncMsgBox.Size = new System.Drawing.Size(263, 100);
             this.btncMsgBox.TabIndex = 0;
             this.btncMsgBox.Text = "MessageBox";
             this.btncMsgBox.UseVisualStyleBackColor = true;
@@ -47,17 +49,19 @@
             // lblResult
             // 
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(12, 18);
+            this.lblResult.Location = new System.Drawing.Point(16, 22);
+            this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(162, 73);
+            this.lblResult.Size = new System.Drawing.Size(799, 139);
             this.lblResult.TabIndex = 1;
             this.lblResult.Text = "label1";
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(215, 357);
+            this.btnRandom.Location = new System.Drawing.Point(287, 439);
+            this.btnRandom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(197, 81);
+            this.btnRandom.Size = new System.Drawing.Size(263, 100);
             this.btnRandom.TabIndex = 2;
             this.btnRandom.Text = "Random";
             this.btnRandom.UseVisualStyleBackColor = true;
@@ -65,23 +69,37 @@
             // 
             // btnTimeSpan
             // 
-            this.btnTimeSpan.Location = new System.Drawing.Point(418, 357);
+            this.btnTimeSpan.Location = new System.Drawing.Point(16, 331);
+            this.btnTimeSpan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimeSpan.Name = "btnTimeSpan";
-            this.btnTimeSpan.Size = new System.Drawing.Size(197, 81);
+            this.btnTimeSpan.Size = new System.Drawing.Size(263, 100);
             this.btnTimeSpan.TabIndex = 3;
             this.btnTimeSpan.Text = "TimeSpan";
             this.btnTimeSpan.UseVisualStyleBackColor = true;
             this.btnTimeSpan.Click += new System.EventHandler(this.btnTimeSpan_Click);
             // 
+            // btnDateTime
+            // 
+            this.btnDateTime.Location = new System.Drawing.Point(287, 331);
+            this.btnDateTime.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDateTime.Name = "btnDateTime";
+            this.btnDateTime.Size = new System.Drawing.Size(263, 100);
+            this.btnDateTime.TabIndex = 4;
+            this.btnDateTime.Text = "DateTime";
+            this.btnDateTime.UseVisualStyleBackColor = true;
+            this.btnDateTime.Click += new System.EventHandler(this.btnDateTime_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(877, 564);
+            this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnTimeSpan);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btncMsgBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -94,6 +112,7 @@
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Button btnTimeSpan;
+        private System.Windows.Forms.Button btnDateTime;
     }
 }
 
