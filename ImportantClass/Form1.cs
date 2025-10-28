@@ -45,5 +45,14 @@ namespace ImportantClass
 
             lblResult.Text = valor2.ToString();  
         }
+
+        private void btnTimeSpan_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = TimeSpan.FromDays(2.55).ToString(); ;
+
+            TimeSpan ts = new TimeSpan(5,30,30);
+
+            lblResult.Text = ts.ToString(); ;
+        }
     }
 }
