@@ -105,5 +105,12 @@ namespace ImportantClass
 
             lblResult.Font = letra;
         }
+
+        private void btnEnviroment_Click(object sender, EventArgs e)
+        {
+            string myDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            lblResult.Text = myDocs;
+        }
     }
 }
