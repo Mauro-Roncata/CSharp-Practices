@@ -35,6 +35,7 @@
             this.btnDateTime = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.btnFont = new System.Windows.Forms.Button();
+            this.btnEnviroment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncMsgBox
@@ -93,7 +94,7 @@
             // 
             // btnColor
             // 
-            this.btnColor.Location = new System.Drawing.Point(558, 331);
+            this.btnColor.Location = new System.Drawing.Point(13, 223);
             this.btnColor.Margin = new System.Windows.Forms.Padding(4);
             this.btnColor.Name = "btnColor";
             this.btnColor.Size = new System.Drawing.Size(263, 100);
@@ -113,11 +114,23 @@
             this.btnFont.UseVisualStyleBackColor = true;
             this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
             // 
+            // btnEnviroment
+            // 
+            this.btnEnviroment.Location = new System.Drawing.Point(287, 223);
+            this.btnEnviroment.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEnviroment.Name = "btnEnviroment";
+            this.btnEnviroment.Size = new System.Drawing.Size(263, 100);
+            this.btnEnviroment.TabIndex = 7;
+            this.btnEnviroment.Text = "Enviroment";
+            this.btnEnviroment.UseVisualStyleBackColor = true;
+            this.btnEnviroment.Click += new System.EventHandler(this.btnEnviroment_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 564);
+            this.Controls.Add(this.btnEnviroment);
             this.Controls.Add(this.btnFont);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.btnDateTime);
@@ -141,6 +154,7 @@
         private System.Windows.Forms.Button btnDateTime;
         private System.Windows.Forms.Button btnColor;
         private System.Windows.Forms.Button btnFont;
+        private System.Windows.Forms.Button btnEnviroment;
     }
 }
 
