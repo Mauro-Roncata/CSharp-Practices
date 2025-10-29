@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6502DE10-1DEB-4F27-8CA9-BA858172A7E5}|ThreadConsole\\ThreadConsole.csproj|c:\\users\\usuario\\source\\repos\\importantclass\\threadconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6502DE10-1DEB-4F27-8CA9-BA858172A7E5}|ThreadConsole\\ThreadConsole.csproj|solutionrelative:threadconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|c:\\users\\usuario\\source\\repos\\importantclass\\threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|solutionrelative:threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FBA1CE4-EE62-4530-9A29-D987C4FD59D5}|ImportantClass\\ImportantClass.csproj|c:\\users\\usuario\\source\\repos\\importantclass\\importantclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5FBA1CE4-EE62-4530-9A29-D987C4FD59D5}|ImportantClass\\ImportantClass.csproj|solutionrelative:importantclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FBA1CE4-EE62-4530-9A29-D987C4FD59D5}|ImportantClass\\ImportantClass.csproj|C:\\Users\\Usuario\\source\\repos\\ImportantClass\\importantclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FBA1CE4-EE62-4530-9A29-D987C4FD59D5}|ImportantClass\\ImportantClass.csproj|solutionrelative:importantclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|c:\\users\\usuario\\source\\repos\\importantclass\\threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|solutionrelative:threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ThreadConsole\\Program.cs",
-              "RelativeDocumentMoniker": "ThreadConsole\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ThreadConsole\\Program.cs",
-              "RelativeToolTip": "ThreadConsole\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T17:36:29.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ImportantClass\\Form1.cs",
-              "RelativeDocumentMoniker": "ImportantClass\\Form1.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ImportantClass\\Form1.cs",
-              "RelativeToolTip": "ImportantClass\\Form1.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAwwHgAAAAiAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ThreadForm\\Form1.cs",
+              "RelativeDocumentMoniker": "ThreadForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ThreadForm\\Form1.cs",
+              "RelativeToolTip": "ThreadForm\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T20:27:50.982Z",
+              "WhenOpened": "2025-10-29T18:11:18.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ImportantClass\\Form1.cs",
-              "RelativeDocumentMoniker": "ImportantClass\\Form1.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ImportantClass\\Form1.cs [Design]",
-              "RelativeToolTip": "ImportantClass\\Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ThreadForm\\Form1.cs",
+              "RelativeDocumentMoniker": "ThreadForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\ThreadForm\\Form1.cs [Design]",
+              "RelativeToolTip": "ThreadForm\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T20:26:03.841Z",
+              "WhenOpened": "2025-10-29T18:09:35.091Z",
               "EditorCaption": " [Design]"
             }
           ]
