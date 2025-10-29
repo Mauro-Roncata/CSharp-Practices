@@ -97,5 +97,13 @@ namespace ImportantClass
             
 
         }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            Font letra = new Font("Arial",36,FontStyle.Regular, GraphicsUnit.Pixel);
+            lblResult.Text = "Bem vindo ao c#, fontes";
+
+            lblResult.Font = letra;
+        }
     }
 }
