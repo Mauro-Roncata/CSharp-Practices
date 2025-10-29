@@ -112,5 +112,16 @@ namespace ImportantClass
 
             lblResult.Text = myDocs;
         }
+
+        private void btnApp_Click(object sender, EventArgs e)
+        {
+            string exec = Application.ExecutablePath;
+            string pasta = Application.StartupPath;
+
+            Application.Restart();
+
+            lblResult.Text = pasta;
+
+        }
     }
 }

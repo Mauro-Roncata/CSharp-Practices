@@ -36,6 +36,7 @@
             this.btnColor = new System.Windows.Forms.Button();
             this.btnFont = new System.Windows.Forms.Button();
             this.btnEnviroment = new System.Windows.Forms.Button();
+            this.btnApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncMsgBox
@@ -125,11 +126,23 @@
             this.btnEnviroment.UseVisualStyleBackColor = true;
             this.btnEnviroment.Click += new System.EventHandler(this.btnEnviroment_Click);
             // 
+            // btnApp
+            // 
+            this.btnApp.Location = new System.Drawing.Point(558, 331);
+            this.btnApp.Margin = new System.Windows.Forms.Padding(4);
+            this.btnApp.Name = "btnApp";
+            this.btnApp.Size = new System.Drawing.Size(263, 100);
+            this.btnApp.TabIndex = 8;
+            this.btnApp.Text = "Application";
+            this.btnApp.UseVisualStyleBackColor = true;
+            this.btnApp.Click += new System.EventHandler(this.btnApp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 564);
+            this.Controls.Add(this.btnApp);
             this.Controls.Add(this.btnEnviroment);
             this.Controls.Add(this.btnFont);
             this.Controls.Add(this.btnColor);
@@ -140,6 +153,7 @@
             this.Controls.Add(this.btncMsgBox);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -155,6 +169,7 @@
         private System.Windows.Forms.Button btnColor;
         private System.Windows.Forms.Button btnFont;
         private System.Windows.Forms.Button btnEnviroment;
+        private System.Windows.Forms.Button btnApp;
     }
 }
 
