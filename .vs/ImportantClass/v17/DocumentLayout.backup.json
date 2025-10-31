@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{DB822DC5-60BA-43DD-95D3-2F18F683E5D3}|TaskConsole\\TaskConsole.csproj|solutionrelative:taskconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|c:\\users\\usuario\\source\\repos\\importantclass\\threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|C:\\Users\\Usuario\\source\\repos\\ImportantClass\\threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9AEBB1-1B68-46A1-A46D-C65D89800A7C}|ThreadForm\\ThreadForm.csproj|solutionrelative:threadform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "TaskConsole\\Program.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ImportantClass\\TaskConsole\\Program.cs",
               "RelativeToolTip": "TaskConsole\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowDwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T13:23:46.368Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "ThreadForm\\Form1.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwDEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T18:11:18.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T18:11:18.763Z"
             },
             {
               "$type": "Document",
