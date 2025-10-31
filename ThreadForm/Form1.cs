@@ -44,7 +44,8 @@ namespace ThreadForm
             while (true)
             {
                 //label1.Text = DateTime.Now.Second.ToString();
-                DefinirValorPropriedade(label1, "Text", DateTime.Now.Second.ToString());
+                //DefinirValorPropriedade(label1, "Text", DateTime.Now.Second.ToString());
+                label1.Invoke(new Action(() => label1.Text = DateTime.Now.Second.ToString()));
 
             }
         }
