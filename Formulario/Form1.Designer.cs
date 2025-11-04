@@ -30,6 +30,7 @@
         {
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSec = new System.Windows.Forms.Button();
+            this.btnSECFORM = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -53,11 +54,23 @@
             this.btnSec.UseVisualStyleBackColor = true;
             this.btnSec.Click += new System.EventHandler(this.btnSec_Click);
             // 
+            // btnSECFORM
+            // 
+            this.btnSECFORM.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSECFORM.Location = new System.Drawing.Point(304, 373);
+            this.btnSECFORM.Name = "btnSECFORM";
+            this.btnSECFORM.Size = new System.Drawing.Size(365, 65);
+            this.btnSECFORM.TabIndex = 2;
+            this.btnSECFORM.Text = "Second Form Thread";
+            this.btnSECFORM.UseVisualStyleBackColor = true;
+            this.btnSECFORM.Click += new System.EventHandler(this.btnSECFORM_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSECFORM);
             this.Controls.Add(this.btnSec);
             this.Controls.Add(this.lblTitulo);
             this.Name = "FormMain";
@@ -72,6 +85,7 @@
 
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnSec;
+        private System.Windows.Forms.Button btnSECFORM;
     }
 }
 
