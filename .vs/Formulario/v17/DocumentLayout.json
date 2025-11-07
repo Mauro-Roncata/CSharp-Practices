@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Formulario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|c:\\users\\usuario\\source\\repos\\formulario\\formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|c:\\users\\usuario\\source\\repos\\formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|c:\\users\\usuario\\source\\repos\\formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormSecond.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\FormSecond.cs",
               "RelativeDocumentMoniker": "Formulario\\FormSecond.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\FormSecond.cs",
               "RelativeToolTip": "Formulario\\FormSecond.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAApwDsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T14:13:55.961Z",
               "EditorCaption": ""
@@ -55,20 +55,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\Form1.cs",
               "RelativeDocumentMoniker": "Formulario\\Form1.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\Form1.cs",
               "RelativeToolTip": "Formulario\\Form1.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAD4vyQAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAD4v2MAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T13:33:23.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\Form1.cs",
               "RelativeDocumentMoniker": "Formulario\\Form1.cs",
