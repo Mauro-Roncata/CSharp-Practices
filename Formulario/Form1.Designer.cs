@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSec = new System.Windows.Forms.Button();
             this.btnSECFORM = new System.Windows.Forms.Button();
@@ -105,14 +106,18 @@
             // 
             // mFileNovo
             // 
+            this.mFileNovo.Image = ((System.Drawing.Image)(resources.GetObject("mFileNovo.Image")));
             this.mFileNovo.Name = "mFileNovo";
+            this.mFileNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.mFileNovo.Size = new System.Drawing.Size(224, 26);
             this.mFileNovo.Text = "Novo";
             this.mFileNovo.Click += new System.EventHandler(this.mFileNovo_Click);
             // 
             // mFileAbrir
             // 
+            this.mFileAbrir.Image = ((System.Drawing.Image)(resources.GetObject("mFileAbrir.Image")));
             this.mFileAbrir.Name = "mFileAbrir";
+            this.mFileAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.mFileAbrir.Size = new System.Drawing.Size(224, 26);
             this.mFileAbrir.Text = "Abrir";
             this.mFileAbrir.Click += new System.EventHandler(this.mFileAbrir_Click);
@@ -124,7 +129,9 @@
             // 
             // mFileSair
             // 
+            this.mFileSair.Image = ((System.Drawing.Image)(resources.GetObject("mFileSair.Image")));
             this.mFileSair.Name = "mFileSair";
+            this.mFileSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.mFileSair.Size = new System.Drawing.Size(224, 26);
             this.mFileSair.Text = "Sair";
             this.mFileSair.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);

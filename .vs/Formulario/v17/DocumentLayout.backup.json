@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Formulario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|c:\\users\\usuario\\source\\repos\\formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|c:\\users\\usuario\\source\\repos\\formulario\\formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|C:\\Users\\Usuario\\source\\repos\\Formulario\\formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14590E9-AB49-48E2-880B-E9B77A0F0B8F}|Formulario\\Formulario.csproj|solutionrelative:formulario\\formsecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormSecond.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\FormSecond.cs",
               "RelativeDocumentMoniker": "Formulario\\FormSecond.cs",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FormSecond.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\FormSecond.cs",
               "RelativeDocumentMoniker": "Formulario\\FormSecond.cs",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\Form1.cs",
               "RelativeDocumentMoniker": "Formulario\\Form1.cs",
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Formulario\\Formulario\\Form1.cs",
               "RelativeDocumentMoniker": "Formulario\\Form1.cs",
