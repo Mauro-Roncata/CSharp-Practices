@@ -16,5 +16,11 @@ namespace FormMdi
         {
             InitializeComponent();
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(MdiParent);
+            f2.Show();
+        }
     }
 }

@@ -9,3 +9,5 @@ C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.csproj.CoreCo
 C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.exe
 C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.pdb
 C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.exe.config
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.Form2.resources
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.Form3.resources
