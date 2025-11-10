@@ -12,6 +12,9 @@ namespace FormControl
 {
     public partial class Form1 : Form
     {
+
+        Label label1;
+        Button btn1;
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +22,7 @@ namespace FormControl
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Label label1 = new Label();
+            label1 = new Label();
             label1.Location = new Point(100, 50);
             label1.Name = "label1";
             label1.AutoSize = false;
@@ -29,14 +32,21 @@ namespace FormControl
             label1.Font = new Font("Arial", 28, FontStyle.Bold, GraphicsUnit.Point);
             label1.Text = "label1";
 
-            Button btn1 = new Button();
+            btn1 = new Button();
             btn1.Location = new Point(250, 285);
             btn1.Size = new Size(200, 60);
             btn1.Text = "Botão código";
             btn1.Font = new Font("Arial", 10, FontStyle.Bold, GraphicsUnit.Point);
+
+            btn1.Click += Btn1_Click;
             
             this.Controls.Add(label1);
             this.Controls.Add(btn1);
+        }
+
+        private void Btn1_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Clicked";
         }
     }
 }
