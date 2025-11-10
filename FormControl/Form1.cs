@@ -28,8 +28,15 @@ namespace FormControl
             label1.ForeColor = Color.Black;
             label1.Font = new Font("Arial", 28, FontStyle.Bold, GraphicsUnit.Point);
             label1.Text = "label1";
+
+            Button btn1 = new Button();
+            btn1.Location = new Point(250, 285);
+            btn1.Size = new Size(200, 60);
+            btn1.Text = "Botão código";
+            btn1.Font = new Font("Arial", 10, FontStyle.Bold, GraphicsUnit.Point);
             
             this.Controls.Add(label1);
+            this.Controls.Add(btn1);
         }
     }
 }
