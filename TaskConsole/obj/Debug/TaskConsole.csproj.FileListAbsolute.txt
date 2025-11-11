@@ -1,8 +1,0 @@
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\bin\Debug\TaskConsole.exe.config
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\bin\Debug\TaskConsole.exe
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\bin\Debug\TaskConsole.pdb
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\obj\Debug\TaskConsole.csproj.AssemblyReference.cache
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\obj\Debug\TaskConsole.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\obj\Debug\TaskConsole.exe
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\obj\Debug\TaskConsole.pdb
-C:\Users\Usuario\source\repos\ImportantClass\TaskConsole\obj\Debug\TaskConsole.exe.config

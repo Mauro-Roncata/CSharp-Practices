@@ -1,8 +1,0 @@
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\bin\Debug\ThreadConsole.exe.config
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\bin\Debug\ThreadConsole.exe
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\bin\Debug\ThreadConsole.pdb
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\obj\Debug\ThreadConsole.csproj.AssemblyReference.cache
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\obj\Debug\ThreadConsole.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\obj\Debug\ThreadConsole.exe
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\obj\Debug\ThreadConsole.pdb
-C:\Users\Usuario\source\repos\ImportantClass\ThreadConsole\obj\Debug\ThreadConsole.exe.config
