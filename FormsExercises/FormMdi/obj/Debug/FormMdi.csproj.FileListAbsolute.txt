@@ -1,0 +1,13 @@
+C:\Users\Usuario\source\repos\Formulario\FormMdi\bin\Debug\FormMdi.exe.config
+C:\Users\Usuario\source\repos\Formulario\FormMdi\bin\Debug\FormMdi.exe
+C:\Users\Usuario\source\repos\Formulario\FormMdi\bin\Debug\FormMdi.pdb
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.Form1.resources
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.exe
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.pdb
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.exe.config
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.Form2.resources
+C:\Users\Usuario\source\repos\Formulario\FormMdi\obj\Debug\FormMdi.Form3.resources
