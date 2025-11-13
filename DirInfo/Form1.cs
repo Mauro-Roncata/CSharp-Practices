@@ -28,8 +28,21 @@ namespace DirInfo
             listBox1.Items.Add(info.Name);
             listBox1.Items.Add(info.CreationTime);
             listBox1.Items.Add(info.Exists);
-
             listBox1.Items.Add(info.Root);
+            listBox1.Items.Add("--------------------------------------------------------------------");
+
+            DirectoryInfo[] dirs = info.GetDirectories();
+            foreach (DirectoryInfo dir in dirs)
+            {
+                listBox1.Items.Add(dir.FullName);
+            }
+
+            listBox1.Items.Add("--------------------------------------------------------------------");
+
+
+
+
         }
+
     }
 }

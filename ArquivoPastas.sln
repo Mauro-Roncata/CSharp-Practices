@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diretorio", "Directory\Dire
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirInfo", "DirInfo\DirInfo.csproj", "{F5A3B7FB-1ADA-499F-92DA-6B5DB7FC7CBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteRead", "WriteRead\WriteRead.csproj", "{7AA8525A-7B30-4ADB-92F0-B639018D3ED5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F5A3B7FB-1ADA-499F-92DA-6B5DB7FC7CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A3B7FB-1ADA-499F-92DA-6B5DB7FC7CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A3B7FB-1ADA-499F-92DA-6B5DB7FC7CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA8525A-7B30-4ADB-92F0-B639018D3ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA8525A-7B30-4ADB-92F0-B639018D3ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA8525A-7B30-4ADB-92F0-B639018D3ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA8525A-7B30-4ADB-92F0-B639018D3ED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
