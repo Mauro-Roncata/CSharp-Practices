@@ -27,5 +27,25 @@ namespace WriteRead
             writer.WriteLine(textBox1.Text);
             writer.Close();
         }
+
+        private void bt_ler_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            string path = "C:\\Users\\Usuario\\source\\repos\\file.txt";
+
+            StreamReader reader = new StreamReader(path, Encoding.Default);
+            /*string readTxt = reader.ReadToEnd();
+
+            textBox1.Text = readTxt;
+            */
+
+            while (!reader.EndOfStream)
+            {
+        
+                textBox1.Text += (char)reader.Read(); 
+
+            }
+            reader.Close();
+        }
     }
 }

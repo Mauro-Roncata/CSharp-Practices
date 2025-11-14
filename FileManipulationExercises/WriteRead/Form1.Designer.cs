@@ -30,6 +30,7 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt_ler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -38,6 +39,7 @@
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(770, 342);
             this.textBox1.TabIndex = 0;
             // 
@@ -51,11 +53,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bt_ler
+            // 
+            this.bt_ler.Location = new System.Drawing.Point(328, 397);
+            this.bt_ler.Name = "bt_ler";
+            this.bt_ler.Size = new System.Drawing.Size(300, 41);
+            this.bt_ler.TabIndex = 2;
+            this.bt_ler.Text = "Ler Txt";
+            this.bt_ler.UseVisualStyleBackColor = true;
+            this.bt_ler.Click += new System.EventHandler(this.bt_ler_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt_ler);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
@@ -69,6 +82,7 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_ler;
     }
 }
 
