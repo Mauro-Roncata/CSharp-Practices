@@ -13,6 +13,7 @@ namespace WriteRead
 {
     public partial class Form1 : Form
     {
+        byte[] buffer;
         public Form1()
         {
             InitializeComponent();
@@ -62,12 +63,24 @@ namespace WriteRead
 
             byte[] buffer = binReader.ReadBytes((int)binReader.BaseStream.Length);
 
-            foreach (byte b in buffer)
+           /*foreach (byte b in buffer)
             {
                 textBox1.Text += (char)b;
             }
 
-            binReader.Close();
+            binReader.Close();*/
+        }
+
+        private void btn_escrevBina_Click(object sender, EventArgs e)
+        {
+            string path = "C:\\Users\\Usuario\\source\\repos\\fileNew.txt";
+            FileStream fs = File.OpenWrite(path);
+            BinaryWriter binWriter = new BinaryWriter(fs);
+
+            binWriter.Write(buffer);
+
+
+            binWriter.Close();
         }
     }
 }
