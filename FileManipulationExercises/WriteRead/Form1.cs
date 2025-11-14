@@ -47,5 +47,27 @@ namespace WriteRead
             }
             reader.Close();
         }
+
+        private void btnLerBin_Click(object sender, EventArgs e)
+        {
+            FileStream fs = File.OpenRead("C:\\Users\\Usuario\\source\\repos\\file.txt");
+
+            BinaryReader binReader = new BinaryReader(fs);
+
+            /*while (binReader.BaseStream.Position != binReader.BaseStream.Length)
+            {
+                byte b = binReader.ReadByte();
+                textBox1.Text += (char)b;
+            }*/
+
+            byte[] conteudo = binReader.ReadBytes((int)binReader.BaseStream.Length);
+
+            foreach (byte b in conteudo)
+            {
+                textBox1.Text += (char)b;
+            }
+
+            binReader.Close();
+        }
     }
 }
