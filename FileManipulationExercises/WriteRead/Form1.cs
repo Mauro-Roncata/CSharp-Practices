@@ -60,9 +60,9 @@ namespace WriteRead
                 textBox1.Text += (char)b;
             }*/
 
-            byte[] conteudo = binReader.ReadBytes((int)binReader.BaseStream.Length);
+            byte[] buffer = binReader.ReadBytes((int)binReader.BaseStream.Length);
 
-            foreach (byte b in conteudo)
+            foreach (byte b in buffer)
             {
                 textBox1.Text += (char)b;
             }
