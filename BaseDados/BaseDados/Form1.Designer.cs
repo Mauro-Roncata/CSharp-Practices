@@ -133,6 +133,7 @@
             this.btnConect.TabIndex = 6;
             this.btnConect.Text = "Conectar";
             this.btnConect.UseVisualStyleBackColor = true;
+            this.btnConect.Click += new System.EventHandler(this.btnConect_Click);
             // 
             // btnCreateTable
             // 
