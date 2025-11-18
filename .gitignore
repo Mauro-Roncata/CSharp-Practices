@@ -22,7 +22,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
-/.vs/
+.vs/
 
 # .NET Core
 project.lock.json
@@ -41,6 +41,7 @@ ScaffoldingReadMe.txt
 ~$*
 *~
 CodeCoverage/
+*.sdf
 
 # MSBuild Binary and Structured Log
 *.binlog
