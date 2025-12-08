@@ -120,6 +120,7 @@ namespace BaseDados
         private void btnCreateTable_Click(object sender, EventArgs e)
         {
             #region SQLServerCE
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -150,8 +151,35 @@ namespace BaseDados
             finally   
             { 
                 conexao.Close(); 
-            }
+            }*/
 
+            #endregion
+
+            #region SQLiteTABLE
+            string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
+            string strConnection = $@"Data Source = {baseDados}; Version = '3'";
+
+            SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+            try
+            {
+                conexao.Open();
+
+                SQLiteCommand comando = new SQLiteCommand();
+                comando.Connection = conexao;
+
+                comando.CommandText = "CREATE TABLE pessoas(id INT NOT NULL PRIMARY KEY, nome NVARCHAR(50), email NVARCHAR(50))";
+                lblResult.Text = "Tabela Criada";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
+            }
             #endregion
         }
     }
