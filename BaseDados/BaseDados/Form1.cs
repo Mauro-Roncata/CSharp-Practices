@@ -1,17 +1,19 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
+using System.Data.SqlServerCe;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlServerCe;
-using System.IO;
-using System.Linq.Expressions;
-using System.Data.SQLite;
-using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace BaseDados
 {
@@ -85,6 +87,7 @@ namespace BaseDados
             #endregion
 
             #region MySQL
+            /*
             string strConnection = "server=127.0.0.1;User ID=root;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -109,9 +112,47 @@ namespace BaseDados
             { 
                 connect.Close(); 
             }
-
+            */
             #endregion
 
+        }
+
+        private void btnCreateTable_Click(object sender, EventArgs e)
+        {
+            #region SQLServerCE
+            string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
+            string strConnection = $@"DataSource = {baseDados}; Password = '123'";
+
+            SqlCeConnection conexao = new SqlCeConnection(strConnection);
+
+            SqlCeEngine db = new SqlCeEngine(strConnection);
+            if (!File.Exists(baseDados))
+            {
+                db.CreateDatabase();
+            }
+            db.Dispose();
+
+            try
+            {
+                conexao.Open();
+
+                SqlCeCommand comando = new SqlCeCommand();
+                comando.Connection = conexao;
+
+                comando.CommandText = "CREATE TABLE pessoas(id INT NOT NULL PRIMARY KEY, nome NVARCHAR(50), email NVARCHAR(50))";
+                lblResult.Text = "Tabela Criada";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            } 
+            finally   
+            { 
+                conexao.Close(); 
+            }
+
+            #endregion
         }
     }
 }
