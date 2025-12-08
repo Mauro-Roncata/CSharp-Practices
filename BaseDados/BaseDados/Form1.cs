@@ -11,6 +11,7 @@ using System.Data.SqlServerCe;
 using System.IO;
 using System.Linq.Expressions;
 using System.Data.SQLite;
+using MySql.Data.MySqlClient;
 
 namespace BaseDados
 {
@@ -52,9 +53,10 @@ namespace BaseDados
             { 
                 connect.Close(); 
             }*/
-            #endregion  
+            #endregion
 
-
+            #region SQLite 
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -79,7 +81,36 @@ namespace BaseDados
             finally
             {
                 connect.Close();
+            }*/
+            #endregion
+
+            #region MySQL
+            string strConnection = "server=127.0.0.1;User ID=root;password=051022";
+
+            MySqlConnection connect = new MySqlConnection(strConnection);
+
+            try
+            {
+                connect.Open();
+                lblResult.Text = "Conectado";
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = connect;
+                comando.CommandText = "CREATE DATABASE IF NOT EXISTS db_teste";
+
+                comando.ExecuteNonQuery();
+                comando.Dispose();
             }
+            catch (Exception ex) 
+            {
+                lblResult.Text = $"Erro:{ex.Message}";
+            }
+            finally
+            { 
+                connect.Close(); 
+            }
+
+            #endregion
 
         }
     }
