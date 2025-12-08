@@ -156,6 +156,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteTABLE
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -179,6 +180,33 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
+            }
+            */
+            #endregion
+
+            #region MySQLTABLE
+            string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
+
+            MySqlConnection connect = new MySqlConnection(strConnection);
+
+            try
+            {
+                connect.Open();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = connect;
+
+                comando.CommandText = "CREATE TABLE pessoas(id INT NOT NULL, nome VARCHAR(50), email VARCHAR(50), PRIMARY KEY(id))";
+                lblResult.Text = "Tabela Criada";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                connect.Close();
             }
             #endregion
         }
