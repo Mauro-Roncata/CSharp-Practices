@@ -185,6 +185,7 @@ namespace BaseDados
             #endregion
 
             #region MySQLTABLE
+            /*
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -207,6 +208,48 @@ namespace BaseDados
             finally
             {
                 connect.Close();
+            }*/
+            #endregion
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            #region SQLServerCEInsert
+            string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
+            string strConnection = $@"DataSource = {baseDados}; Password = '123'";
+
+            SqlCeConnection conexao = new SqlCeConnection(strConnection);
+
+            SqlCeEngine db = new SqlCeEngine(strConnection);
+            if (!File.Exists(baseDados))
+            {
+                db.CreateDatabase();
+            }
+            db.Dispose();
+
+            try
+            {
+                conexao.Open();
+
+                SqlCeCommand comando = new SqlCeCommand();
+                comando.Connection = conexao;
+
+                int id = new Random(DateTime.Now.Millisecond).Next(0,1000);
+                string nome = txtNome.Text;
+                string email = txtEmail.Text;
+
+                comando.CommandText = "INSERT INTO pessoas VALUES ("+id+", ' "+nome+" ', ' "+email+" ')";
+                comando.ExecuteNonQuery();
+                lblResult.Text = "Registro inserido";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
             }
             #endregion
         }
