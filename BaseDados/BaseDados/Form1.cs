@@ -215,6 +215,7 @@ namespace BaseDados
         private void btnInserir_Click(object sender, EventArgs e)
         {
             #region SQLServerCEInsert
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -241,6 +242,37 @@ namespace BaseDados
                 comando.CommandText = "INSERT INTO pessoas VALUES ("+id+", ' "+nome+" ', ' "+email+" ')";
                 comando.ExecuteNonQuery();
                 lblResult.Text = "Registro inserido";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
+            }*/
+            #endregion
+
+            #region SQLiteInsert
+            string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
+            string strConnection = $@"Data Source = {baseDados}; Version = '3'";
+
+            SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+            try
+            {
+                conexao.Open();
+
+                SQLiteCommand comando = new SQLiteCommand();
+                comando.Connection = conexao;
+
+                int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
+                string nome = txtNome.Text;
+                string email = txtEmail.Text;
+
+                comando.CommandText = comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", ' " + nome + " ', ' " + email + " ')";
+                lblResult.Text = "Dados Inseridos";
                 comando.Dispose();
             }
             catch (Exception ex)
