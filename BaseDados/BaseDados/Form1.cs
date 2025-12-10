@@ -255,6 +255,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteInsert
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -282,6 +283,36 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
+            }*/
+            #endregion
+
+            #region MySqlInsert
+            string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
+
+            MySqlConnection connect = new MySqlConnection(strConnection);
+
+            try
+            {
+                connect.Open();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = connect;
+
+                int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
+                string nome = txtNome.Text;
+                string email = txtEmail.Text;
+
+                comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", ' " + nome + " ', ' " + email + " ')";
+                lblResult.Text = "Registro inserido ";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                connect.Close();
             }
             #endregion
         }
