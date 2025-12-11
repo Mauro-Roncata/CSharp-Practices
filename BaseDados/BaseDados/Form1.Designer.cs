@@ -48,10 +48,10 @@
             // 
             // lblResult
             // 
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.Location = new System.Drawing.Point(12, 9);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(540, 83);
+            this.lblResult.Size = new System.Drawing.Size(882, 83);
             this.lblResult.TabIndex = 0;
             this.lblResult.Text = "Resultado";
             // 
@@ -177,6 +177,7 @@
             this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnEditar
             // 
