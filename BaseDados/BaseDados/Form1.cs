@@ -58,7 +58,7 @@ namespace BaseDados
             #endregion
 
             #region SQLite 
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -83,11 +83,11 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }
+            }*/
             #endregion
 
             #region MySQL
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -112,7 +112,7 @@ namespace BaseDados
             { 
                 connect.Close(); 
             }
-            */
+            
             #endregion
 
         }
@@ -157,7 +157,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteTABLE
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -183,11 +183,11 @@ namespace BaseDados
             {
                 conexao.Close();
             }
-            
+            */
             #endregion
 
             #region MySQLTABLE
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -200,6 +200,7 @@ namespace BaseDados
                 comando.Connection = connect;
 
                 comando.CommandText = "CREATE TABLE pessoas(id INT NOT NULL, nome VARCHAR(50), email VARCHAR(50), PRIMARY KEY(id))";
+                comando.ExecuteNonQuery();
                 lblResult.Text = "Tabela Criada";
                 comando.Dispose();
             }
@@ -210,7 +211,7 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }*/
+            }
             #endregion
         }
 
@@ -257,7 +258,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteInsert
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -286,11 +287,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region MySqlInsert
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -307,6 +308,7 @@ namespace BaseDados
                 string email = txtEmail.Text;
 
                 comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", ' " + nome + " ', ' " + email + " ')";
+                comando.ExecuteNonQuery();
                 lblResult.Text = "Registro inserido ";
                 comando.Dispose();
             }
@@ -317,7 +319,7 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }*/
+            }
             #endregion
         }
 
@@ -368,7 +370,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteSearch
-
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -406,7 +408,48 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
+            } */
+            #endregion
+
+            #region MySQLSearch
+            string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
+
+            MySqlConnection connect = new MySqlConnection(strConnection);
+
+            try
+            {
+
+                string querry = "SELECT * FROM pessoas";
+
+                if (txtNome.Text != "")
+                {
+                    querry = $"SELECT * FROM pessoas WHERE nome LIKE '{txtNome.Text}'";
+                }
+
+
+                DataTable dt = new DataTable();
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter(querry, connect);
+
+                connect.Open();
+
+                adapter.Fill(dt);
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    dataGridView1.Rows.Add(dr.ItemArray);
+                }
+
             }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                connect.Close();
+            }
+
             #endregion
         }
     }   }
