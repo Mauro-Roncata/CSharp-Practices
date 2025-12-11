@@ -58,7 +58,7 @@ namespace BaseDados
             #endregion
 
             #region SQLite 
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -83,7 +83,7 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }*/
+            }
             #endregion
 
             #region MySQL
@@ -140,7 +140,8 @@ namespace BaseDados
                 SqlCeCommand comando = new SqlCeCommand();
                 comando.Connection = conexao;
 
-                comando.CommandText = "CREATE TABLE pessoas(id INT NOT NULL PRIMARY KEY, nome NVARCHAR(50), email NVARCHAR(50))";
+                comando.CommandText = "CREATE TABLE pessoas (id INT NOT NULL PRIMARY KEY, nome NVARCHAR(50), email NVARCHAR(50))";
+                comando.ExecuteNonQuery();
                 lblResult.Text = "Tabela Criada";
                 comando.Dispose();
             }
@@ -151,12 +152,12 @@ namespace BaseDados
             finally   
             { 
                 conexao.Close(); 
-            }*/
-
+            }
+            */
             #endregion
 
             #region SQLiteTABLE
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -170,6 +171,7 @@ namespace BaseDados
                 comando.Connection = conexao;
 
                 comando.CommandText = "CREATE TABLE pessoas(id INT NOT NULL PRIMARY KEY, nome NVARCHAR(50), email NVARCHAR(50))";
+                comando.ExecuteNonQuery();
                 lblResult.Text = "Tabela Criada";
                 comando.Dispose();
             }
@@ -181,7 +183,7 @@ namespace BaseDados
             {
                 conexao.Close();
             }
-            */
+            
             #endregion
 
             #region MySQLTABLE
@@ -255,7 +257,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteInsert
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -273,6 +275,7 @@ namespace BaseDados
                 string email = txtEmail.Text;
 
                 comando.CommandText = comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", ' " + nome + " ', ' " + email + " ')";
+                comando.ExecuteNonQuery();
                 lblResult.Text = "Dados Inseridos";
                 comando.Dispose();
             }
@@ -283,10 +286,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }*/
+            }
             #endregion
 
             #region MySqlInsert
+            /*
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -313,8 +317,96 @@ namespace BaseDados
             finally
             {
                 connect.Close();
+            }*/
+            #endregion
+        }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = string.Empty;
+            dataGridView1.Rows.Clear();
+
+            #region SQLServerSearch
+            /*
+            string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
+            string strConnection = $@"DataSource = {baseDados}; Password = '123'";
+
+            SqlCeConnection conexao = new SqlCeConnection(strConnection);
+
+            try
+            {
+
+                string querry = "SELECT * FROM pessoas";
+
+                if (txtNome.Text != "")
+                {
+                    querry = $"SELECT * FROM pessoas WHERE nome LIKE '{txtNome.Text}'";
+                }
+
+                DataTable dt = new DataTable();
+
+                SqlCeDataAdapter adapter = new SqlCeDataAdapter(querry, conexao);
+
+                conexao.Open();
+
+                adapter.Fill(dt);
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    dataGridView1.Rows.Add(dr.ItemArray);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
+            }*/
+            #endregion
+
+            #region SQLiteSearch
+
+            string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
+            string strConnection = $@"Data Source = {baseDados}; Version = '3'";
+
+            SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+            try
+            {
+
+                string querry = "SELECT * FROM pessoas";
+
+                if (txtNome.Text != "")
+                {
+                    querry = $"SELECT * FROM pessoas WHERE nome LIKE '{txtNome.Text}'";
+                }
+
+
+                DataTable dt = new DataTable();
+
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(querry, conexao);
+
+                conexao.Open();
+
+                adapter.Fill(dt);
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    dataGridView1.Rows.Add(dr.ItemArray);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
             }
             #endregion
         }
-    }
-}
+    }   }
