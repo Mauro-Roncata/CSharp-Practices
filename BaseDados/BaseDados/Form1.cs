@@ -329,7 +329,7 @@ namespace BaseDados
             dataGridView1.Rows.Clear();
 
             #region SQLServerSearch
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -366,7 +366,7 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region SQLiteSearch
@@ -412,7 +412,7 @@ namespace BaseDados
             #endregion
 
             #region MySQLSearch
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -450,14 +450,14 @@ namespace BaseDados
             {
                 connect.Close();
             }
-            */
+            
             #endregion
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             #region SQLServerCEDelete
-
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -491,7 +491,7 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region SQLiteDelete
@@ -501,6 +501,7 @@ namespace BaseDados
 
             SQLiteConnection conexao = new SQLiteConnection(strConnection);
 
+
             try
             {
                 conexao.Open();
@@ -508,13 +509,11 @@ namespace BaseDados
                 SQLiteCommand comando = new SQLiteCommand();
                 comando.Connection = conexao;
 
-                int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
-                string nome = txtNome.Text;
-                string email = txtEmail.Text;
+                int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
 
-                comando.CommandText = comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", ' " + nome + " ', ' " + email + " ')";
+                comando.CommandText = $"DELETE FROM pessoas WHERE id = '{id}' ";
                 comando.ExecuteNonQuery();
-                lblResult.Text = "Dados Inseridos";
+                lblResult.Text = "Registro excluido";
                 comando.Dispose();
             }
             catch (Exception ex)
@@ -524,11 +523,12 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }*/
+            }
+            */
             #endregion
 
             #region MySqlDelete
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -540,13 +540,11 @@ namespace BaseDados
                 MySqlCommand comando = new MySqlCommand();
                 comando.Connection = connect;
 
-                int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
-                string nome = txtNome.Text;
-                string email = txtEmail.Text;
+                int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
 
-                comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", ' " + nome + " ', ' " + email + " ')";
+                comando.CommandText = $"DELETE FROM pessoas WHERE id = '{id}' ";
                 comando.ExecuteNonQuery();
-                lblResult.Text = "Registro inserido ";
+                lblResult.Text = "Registro excluido";
                 comando.Dispose();
             }
             catch (Exception ex)
@@ -556,7 +554,7 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }*/
+            }
             #endregion
         }
 
