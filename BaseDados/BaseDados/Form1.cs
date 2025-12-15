@@ -258,7 +258,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteInsert
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -287,11 +287,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region MySqlInsert
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -319,7 +319,7 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }*/
+            }
             #endregion
         }
 
@@ -370,7 +370,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteSearch
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -408,11 +408,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            } 
+            } */
             #endregion
 
             #region MySQLSearch
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -450,7 +450,7 @@ namespace BaseDados
             {
                 connect.Close();
             }
-            */
+            
             #endregion
         }
 
@@ -594,7 +594,7 @@ namespace BaseDados
             #endregion
 
             #region SQLiteUpdate
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -624,12 +624,12 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             
             #endregion
 
             #region MySqlUpdate
-            /*
+            
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -643,9 +643,11 @@ namespace BaseDados
 
                 int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
 
-                comando.CommandText = $"DELETE FROM pessoas WHERE id = '{id}' ";
+                string querry = $"UPDATE pessoas SET nome = '{txtNome.Text}', email = '{txtEmail.Text}' WHERE id = '{id}'";
+
+                comando.CommandText = querry;
                 comando.ExecuteNonQuery();
-                lblResult.Text = "Registro excluido";
+                lblResult.Text = "Registro Alterado";
                 comando.Dispose();
             }
             catch (Exception ex)
@@ -655,7 +657,7 @@ namespace BaseDados
             finally
             {
                 connect.Close();
-            }*/
+            }
             #endregion
         }
     }
