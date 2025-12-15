@@ -218,7 +218,7 @@ namespace BaseDados
         private void btnInserir_Click(object sender, EventArgs e)
         {
             #region SQLServerCEInsert
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -254,11 +254,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region SQLiteInsert
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -287,7 +287,7 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }*/
+            }
             #endregion
 
             #region MySqlInsert
@@ -329,7 +329,7 @@ namespace BaseDados
             dataGridView1.Rows.Clear();
 
             #region SQLServerSearch
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -366,11 +366,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region SQLiteSearch
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -408,7 +408,7 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            } */
+            } 
             #endregion
 
             #region MySQLSearch
@@ -561,7 +561,7 @@ namespace BaseDados
         private void btnEditar_Click(object sender, EventArgs e)
         {
             #region SQLServerCEUpdate
-            
+            /*
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -590,11 +590,11 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }
+            }*/
             #endregion
 
             #region SQLiteUpdate
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
             string strConnection = $@"Data Source = {baseDados}; Version = '3'";
 
@@ -610,9 +610,11 @@ namespace BaseDados
 
                 int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
 
-                comando.CommandText = $"DELETE FROM pessoas WHERE id = '{id}' ";
+                string querry = $"UPDATE pessoas SET nome = '{txtNome.Text}', email = '{txtEmail.Text}' WHERE id LIKE '{id}'";
+
+                comando.CommandText = querry;
                 comando.ExecuteNonQuery();
-                lblResult.Text = "Registro excluido";
+                lblResult.Text = "Registro Alterado";
                 comando.Dispose();
             }
             catch (Exception ex)
@@ -623,7 +625,7 @@ namespace BaseDados
             {
                 conexao.Close();
             }
-            */
+            
             #endregion
 
             #region MySqlUpdate
