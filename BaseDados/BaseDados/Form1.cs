@@ -329,7 +329,7 @@ namespace BaseDados
             dataGridView1.Rows.Clear();
 
             #region SQLServerSearch
-            /*
+            
             string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
@@ -366,7 +366,7 @@ namespace BaseDados
             finally
             {
                 conexao.Close();
-            }*/
+            }
             #endregion
 
             #region SQLiteSearch
@@ -412,7 +412,7 @@ namespace BaseDados
             #endregion
 
             #region MySQLSearch
-            
+            /*
             string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
 
             MySqlConnection connect = new MySqlConnection(strConnection);
@@ -450,7 +450,7 @@ namespace BaseDados
             {
                 connect.Close();
             }
-            
+            */
             #endregion
         }
 
@@ -558,6 +558,103 @@ namespace BaseDados
             #endregion
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            #region SQLServerCEUpdate
+            
+            string baseDados = Application.StartupPath + "\\db\\dbSQLServer.sdf";
+            string strConnection = $@"DataSource = {baseDados}; Password = '123'";
 
+            SqlCeConnection conexao = new SqlCeConnection(strConnection);
+
+            try
+            {
+                conexao.Open();
+
+                SqlCeCommand comando = new SqlCeCommand();
+                comando.Connection = conexao;
+
+                int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+
+                string querry = $"UPDATE pessoas SET nome = '{txtNome.Text}', email = '{txtEmail.Text}' WHERE id LIKE '{id}'";
+
+                comando.CommandText = querry;
+                comando.ExecuteNonQuery();
+                lblResult.Text = "Registro Alterado";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            #endregion
+
+            #region SQLiteUpdate
+            /*
+            string baseDados = Application.StartupPath + "\\db\\DBSQLite.db";
+            string strConnection = $@"Data Source = {baseDados}; Version = '3'";
+
+            SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+
+            try
+            {
+                conexao.Open();
+
+                SQLiteCommand comando = new SQLiteCommand();
+                comando.Connection = conexao;
+
+                int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+
+                comando.CommandText = $"DELETE FROM pessoas WHERE id = '{id}' ";
+                comando.ExecuteNonQuery();
+                lblResult.Text = "Registro excluido";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            */
+            #endregion
+
+            #region MySqlUpdate
+            /*
+            string strConnection = "server=127.0.0.1;User ID=root;database=db_teste;password=051022";
+
+            MySqlConnection connect = new MySqlConnection(strConnection);
+
+            try
+            {
+                connect.Open();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = connect;
+
+                int id = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+
+                comando.CommandText = $"DELETE FROM pessoas WHERE id = '{id}' ";
+                comando.ExecuteNonQuery();
+                lblResult.Text = "Registro excluido";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Erro: {ex.Message}";
+            }
+            finally
+            {
+                connect.Close();
+            }*/
+            #endregion
+        }
     }
 }
